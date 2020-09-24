@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>121096741034-s61kuk3qgofcmbehpfa98ivt15ia6c4g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.121096741034-s61kuk3qgofcmbehpfa98ivt15ia6c4g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDti5w0H21Ewop2Qhj7xkwAe_vPtJvSsiw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>121096741034</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hiroyaoooooo.NomiGuin</string>
+	<key>PROJECT_ID</key>
+	<string>nomiguin</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nomiguin.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:121096741034:ios:1e1e107e0f4664601a30d3</string>
+	<key>DATABASE_URL</key>
+	<string>https://nomiguin.firebaseio.com</string>
+</dict>
+</plist>

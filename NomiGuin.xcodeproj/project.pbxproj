@@ -19,6 +19,7 @@
 		60AE7A79251C87F10065CE47 /* NomiGuinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A78251C87F10065CE47 /* NomiGuinUITests.swift */; };
 		91B6FAFD3B6F68DA875013D3 /* Pods_NomiGuinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE7D1880ED35A2C20B85B98 /* Pods_NomiGuinTests.framework */; };
 		A5ECAEF9302D40C2A26224A5 /* Pods_NomiGuin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832A40F17E9B69ABDA2D6CB8 /* Pods_NomiGuin.framework */; };
+		D7D89827251C9099002588E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7D89826251C9099002588E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C0047C43CE83A2F11800EEA5 /* Pods-NomiGuinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinUITests.release.xcconfig"; path = "Target Support Files/Pods-NomiGuinUITests/Pods-NomiGuinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CBF83BDB31FC0B052256138D /* Pods-NomiGuinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinUITests.debug.xcconfig"; path = "Target Support Files/Pods-NomiGuinUITests/Pods-NomiGuinUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDC8A068A6FA1B5942FCAAB4 /* Pods-NomiGuinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinTests.debug.xcconfig"; path = "Target Support Files/Pods-NomiGuinTests/Pods-NomiGuinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7D89826251C9099002588E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				60AE7A59251C87EE0065CE47 /* Main.storyboard */,
 				60AE7A5F251C87F10065CE47 /* Assets.xcassets */,
 				60AE7A61251C87F10065CE47 /* LaunchScreen.storyboard */,
+				D7D89826251C9099002588E6 /* GoogleService-Info.plist */,
 				60AE7A64251C87F10065CE47 /* Info.plist */,
 				60AE7A5C251C87EE0065CE47 /* NomiGuin.xcdatamodeld */,
 			);
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AE7A63251C87F10065CE47 /* LaunchScreen.storyboard in Resources */,
+				D7D89827251C9099002588E6 /* GoogleService-Info.plist in Resources */,
 				60AE7A60251C87F10065CE47 /* Assets.xcassets in Resources */,
 				60AE7A5B251C87EE0065CE47 /* Main.storyboard in Resources */,
 			);
