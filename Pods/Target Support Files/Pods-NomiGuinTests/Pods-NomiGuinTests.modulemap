@@ -1,0 +1,6 @@
+framework module Pods_NomiGuinTests {
+  umbrella header "Pods-NomiGuinTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
