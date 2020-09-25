@@ -78,14 +78,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mailAddressTextField" destination="JNd-S2-tfm" id="Ou9-WV-raT"/>
+                        <outlet property="emailAddressTextField" destination="JNd-S2-tfm" id="Ou9-WV-raT"/>
                         <outlet property="passwordTextField" destination="wj1-kz-0pQ" id="JIN-3b-Iq6"/>
                         <outlet property="userNameTextField" destination="8ct-l8-h9o" id="JLZ-NR-aBX"/>
+                        <segue destination="IwO-Gt-huW" kind="presentation" identifier="TO_FRIENDSVC" modalPresentationStyle="fullScreen" id="Fmw-2o-Ey2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-26" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NHL-sr-gxH">
@@ -103,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="939" y="138"/>
         </scene>
-        <!--Friends View Controller-->
+        <!--FriendsViewController-->
         <scene sceneID="pha-bj-r54">
             <objects>
-                <viewController id="tfI-bV-mkr" customClass="FriendsViewController" customModule="NomiGuin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriendsViewController" title="FriendsViewController" id="tfI-bV-mkr" customClass="FriendsViewController" customModule="NomiGuin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Mm-XD-Za4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

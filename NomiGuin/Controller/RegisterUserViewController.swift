@@ -9,30 +9,44 @@ import UIKit
 import Firebase
 
 class RegisterUserViewController: UIViewController {
-    
-    var ref: DatabaseReference!
-    
+        
     @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var mailAddressTextField: UITextField!
+    @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference()
-
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func registerBtnWasPressed() {
-        Auth.auth().createUser(withEmail: mailAddressTextField.text!, password: passwordTextField.text!) { (authResult, error) in
-            if let err = error{
-                print("ERROR: \(err)")
+        guard let userName = userNameTextField.text else {
+            displayAlert(title: "ユーザーネームが入力されていません", message: "")
+            return
+        }
+        guard let emailAddress = emailAddressTextField.text else {
+            displayAlert(title: "メールアドレスが入力されていません", message: "")
+            return
+        }
+        guard let password = passwordTextField.text else {
+            displayAlert(title: "パスワードが入力されていません", message: "")
+            return
+        }
+        FirebaseAuthAPI().registerUser(username: userName, email: emailAddress, password: password) { (status) in
+            if status{
+                self.performSegue(withIdentifier: "TO_FRIENDSVC", sender: nil)
             }else{
-                guard let userID = authResult?.user.uid else { return }
-                self.ref.child("users").child(userID).setValue(["username": self.userNameTextField.text!, "totalAlcoholValue": 0])
+                self.displayAlert(title: "エラー", message: "サーバーと接続することができませんでした")
             }
         }
     }
     
+    func displayAlert(title: String, message: String) {
+        let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle:  UIAlertController.Style.alert)
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("OK")
+        })
+        alert.addAction(defaultAction)
+        present(alert, animated: true, completion: nil)
+    }
 }

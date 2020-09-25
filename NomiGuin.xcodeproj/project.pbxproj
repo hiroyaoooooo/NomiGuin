@@ -21,6 +21,7 @@
 		D70DCE98251C9EE8007D4AB1 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DCE97251C9EE8007D4AB1 /* RegisterUserViewController.swift */; };
 		D70DCE9C251CA0B1007D4AB1 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DCE9B251CA0B1007D4AB1 /* FriendsViewController.swift */; };
 		D70DCE9E251CA0BB007D4AB1 /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DCE9D251CA0BB007D4AB1 /* AddDrinkViewController.swift */; };
+		D7B787BF251D8F4100C512B3 /* FirebaseAuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B787BE251D8F4100C512B3 /* FirebaseAuthAPI.swift */; };
 		D7D89827251C9099002588E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7D89826251C9099002588E6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		D70DCE97251C9EE8007D4AB1 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		D70DCE9B251CA0B1007D4AB1 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		D70DCE9D251CA0BB007D4AB1 /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
+		D7B787BE251D8F4100C512B3 /* FirebaseAuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthAPI.swift; sourceTree = "<group>"; };
 		D7D89826251C9099002588E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 		60AE7A52251C87EE0065CE47 /* NomiGuin */ = {
 			isa = PBXGroup;
 			children = (
+				D7B787BE251D8F4100C512B3 /* FirebaseAuthAPI.swift */,
 				60AE7A53251C87EE0065CE47 /* AppDelegate.swift */,
 				60AE7A55251C87EE0065CE47 /* SceneDelegate.swift */,
 				60AE7A59251C87EE0065CE47 /* Main.storyboard */,
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B787BF251D8F4100C512B3 /* FirebaseAuthAPI.swift in Sources */,
 				D70DCE9E251CA0BB007D4AB1 /* AddDrinkViewController.swift in Sources */,
 				D70DCE98251C9EE8007D4AB1 /* RegisterUserViewController.swift in Sources */,
 				60AE7A54251C87EE0065CE47 /* AppDelegate.swift in Sources */,
