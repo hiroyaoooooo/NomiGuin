@@ -16,6 +16,10 @@
 		60AE7A63251C87F10065CE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE7A61251C87F10065CE47 /* LaunchScreen.storyboard */; };
 		60AE7A6E251C87F10065CE47 /* NomiGuinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A6D251C87F10065CE47 /* NomiGuinTests.swift */; };
 		60AE7A79251C87F10065CE47 /* NomiGuinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A78251C87F10065CE47 /* NomiGuinUITests.swift */; };
+		60AE7AB9251DA6900065CE47 /* NomiUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7AB8251DA6900065CE47 /* NomiUser.swift */; };
+		60AE7AC2251DA8010065CE47 /* NomiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7AC0251DA8010065CE47 /* NomiTableViewCell.swift */; };
+		60AE7AC3251DA8010065CE47 /* NomiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AE7AC1251DA8010065CE47 /* NomiTableViewCell.xib */; };
+		60AE7AD2251DABF30065CE47 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7AD1251DABF30065CE47 /* FriendsModel.swift */; };
 		91B6FAFD3B6F68DA875013D3 /* Pods_NomiGuinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE7D1880ED35A2C20B85B98 /* Pods_NomiGuinTests.framework */; };
 		A5ECAEF9302D40C2A26224A5 /* Pods_NomiGuin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832A40F17E9B69ABDA2D6CB8 /* Pods_NomiGuin.framework */; };
 		D70DCE98251C9EE8007D4AB1 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70DCE97251C9EE8007D4AB1 /* RegisterUserViewController.swift */; };
@@ -60,6 +64,10 @@
 		60AE7A74251C87F10065CE47 /* NomiGuinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomiGuinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE7A78251C87F10065CE47 /* NomiGuinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomiGuinUITests.swift; sourceTree = "<group>"; };
 		60AE7A7A251C87F10065CE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AE7AB8251DA6900065CE47 /* NomiUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomiUser.swift; sourceTree = "<group>"; };
+		60AE7AC0251DA8010065CE47 /* NomiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomiTableViewCell.swift; sourceTree = "<group>"; };
+		60AE7AC1251DA8010065CE47 /* NomiTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NomiTableViewCell.xib; sourceTree = "<group>"; };
+		60AE7AD1251DABF30065CE47 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
 		7310EF7EDD02B20E2A2C4935 /* Pods-NomiGuin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuin.release.xcconfig"; path = "Target Support Files/Pods-NomiGuin/Pods-NomiGuin.release.xcconfig"; sourceTree = "<group>"; };
 		832A40F17E9B69ABDA2D6CB8 /* Pods_NomiGuin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomiGuin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A90F8C695039563F64B2BF /* Pods-NomiGuinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinTests.release.xcconfig"; path = "Target Support Files/Pods-NomiGuinTests/Pods-NomiGuinTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,15 +135,20 @@
 			isa = PBXGroup;
 			children = (
 				D7B787BE251D8F4100C512B3 /* FirebaseAuthAPI.swift */,
+				60AE7AB8251DA6900065CE47 /* NomiUser.swift */,
 				60AE7A53251C87EE0065CE47 /* AppDelegate.swift */,
 				60AE7A55251C87EE0065CE47 /* SceneDelegate.swift */,
 				60AE7A59251C87EE0065CE47 /* Main.storyboard */,
+				60AE7AD0251DABDA0065CE47 /* Model */,
+				60AE7ACF251DABD00065CE47 /* View */,
 				D70DCE9A251CA091007D4AB1 /* Controller */,
 				60AE7A5F251C87F10065CE47 /* Assets.xcassets */,
 				60AE7A61251C87F10065CE47 /* LaunchScreen.storyboard */,
 				D7D89826251C9099002588E6 /* GoogleService-Info.plist */,
 				60AE7A64251C87F10065CE47 /* Info.plist */,
 				60AE7A5C251C87EE0065CE47 /* NomiGuin.xcdatamodeld */,
+				60AE7AC0251DA8010065CE47 /* NomiTableViewCell.swift */,
+				60AE7AC1251DA8010065CE47 /* NomiTableViewCell.xib */,
 			);
 			path = NomiGuin;
 			sourceTree = "<group>";
@@ -156,6 +169,21 @@
 				60AE7A7A251C87F10065CE47 /* Info.plist */,
 			);
 			path = NomiGuinUITests;
+			sourceTree = "<group>";
+		};
+		60AE7ACF251DABD00065CE47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60AE7AD0251DABDA0065CE47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60AE7AD1251DABF30065CE47 /* FriendsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6E6B8085DBB982E11F1C42A3 /* Frameworks */ = {
@@ -299,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AE7A63251C87F10065CE47 /* LaunchScreen.storyboard in Resources */,
+				60AE7AC3251DA8010065CE47 /* NomiTableViewCell.xib in Resources */,
 				D7D89827251C9099002588E6 /* GoogleService-Info.plist in Resources */,
 				60AE7A60251C87F10065CE47 /* Assets.xcassets in Resources */,
 				60AE7A5B251C87EE0065CE47 /* Main.storyboard in Resources */,
@@ -415,6 +444,9 @@
 				D7B787BF251D8F4100C512B3 /* FirebaseAuthAPI.swift in Sources */,
 				D70DCE9E251CA0BB007D4AB1 /* AddDrinkViewController.swift in Sources */,
 				D70DCE98251C9EE8007D4AB1 /* RegisterUserViewController.swift in Sources */,
+				60AE7AC2251DA8010065CE47 /* NomiTableViewCell.swift in Sources */,
+				60AE7AB9251DA6900065CE47 /* NomiUser.swift in Sources */,
+				60AE7AD2251DABF30065CE47 /* FriendsModel.swift in Sources */,
 				60AE7A54251C87EE0065CE47 /* AppDelegate.swift in Sources */,
 				60AE7A56251C87EE0065CE47 /* SceneDelegate.swift in Sources */,
 				D70DCE9C251CA0B1007D4AB1 /* FriendsViewController.swift in Sources */,
