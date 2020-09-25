@@ -11,14 +11,15 @@ import Firebase
 class FriendsViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var alcoholAddBtn: UIButton!
     
     var ref: DatabaseReference!
     var friendsModel = FriendsModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUp()
+        alcoholAddBtn.layer.cornerRadius = 10.0
     }
     
     func setUp() {
@@ -26,12 +27,11 @@ class FriendsViewController: UIViewController {
         friendsModel.delegate = self
         friendsModel.readData()
     }
-    
 }
 
 extension FriendsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 30
+        return 60
     }
 }
 

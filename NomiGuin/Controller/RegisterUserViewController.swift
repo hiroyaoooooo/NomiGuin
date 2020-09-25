@@ -7,15 +7,21 @@
 
 import UIKit
 import Firebase
+import SkyFloatingLabelTextField
 
 class RegisterUserViewController: UIViewController {
-        
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var emailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var inputBackgroundView: UIView!
+    @IBOutlet weak var registerBtn: UIButton!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputBackgroundView.roundCorners([.topLeft, .topRight], radius: 40)
+        registerBtn.layer.cornerRadius = 10.0
+
     }
     
     @IBAction func registerBtnWasPressed() {
@@ -48,5 +54,15 @@ class RegisterUserViewController: UIViewController {
         })
         alert.addAction(defaultAction)
         present(alert, animated: true, completion: nil)
+    }
+}
+
+
+extension UIView {
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
     }
 }
