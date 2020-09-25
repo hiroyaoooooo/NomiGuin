@@ -10,6 +10,8 @@
 		27C61BC49EBD0136502C2635 /* Pods_NomiGuinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5304DDE0713DFD56D9C3D1A9 /* Pods_NomiGuinTests.framework */; };
 		348797C5AAA63659ACF36403 /* Pods_NomiGuinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC858979F97CE53AE5C3828D /* Pods_NomiGuinUITests.framework */; };
 		465E3EC3A69277E6CD466C62 /* Pods_NomiGuin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83E00A968FBA849F28B461D /* Pods_NomiGuin.framework */; };
+		601DDFE4251DE666004AFF22 /* AddDrinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DDFE3251DE666004AFF22 /* AddDrinkModel.swift */; };
+		601DDFE9251DE90E004AFF22 /* Drinkables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601DDFE8251DE90E004AFF22 /* Drinkables.swift */; };
 		60AE7A54251C87EE0065CE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A53251C87EE0065CE47 /* AppDelegate.swift */; };
 		60AE7A56251C87EE0065CE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AE7A55251C87EE0065CE47 /* SceneDelegate.swift */; };
 		60AE7A5B251C87EE0065CE47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AE7A59251C87EE0065CE47 /* Main.storyboard */; };
@@ -48,11 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15445813B6EBB0AC43467AE2 /* Pods-NomiGuin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuin.debug.xcconfig"; path = "Target Support Files/Pods-NomiGuin/Pods-NomiGuin.debug.xcconfig"; sourceTree = "<group>"; };
-		15E71B2CF93EBE853DCCF04E /* Pods-NomiGuinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinUITests.debug.xcconfig"; path = "Target Support Files/Pods-NomiGuinUITests/Pods-NomiGuinUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		15EC3BEEED5EF89618BA2442 /* Pods-NomiGuin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuin.release.xcconfig"; path = "Target Support Files/Pods-NomiGuin/Pods-NomiGuin.release.xcconfig"; sourceTree = "<group>"; };
-		5304DDE0713DFD56D9C3D1A9 /* Pods_NomiGuinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomiGuinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E59F4D558498E227612E4EF /* Pods-NomiGuinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuinTests.release.xcconfig"; path = "Target Support Files/Pods-NomiGuinTests/Pods-NomiGuinTests.release.xcconfig"; sourceTree = "<group>"; };
+		06C3C39699B689AFCF28B15E /* Pods-NomiGuin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NomiGuin.debug.xcconfig"; path = "Target Support Files/Pods-NomiGuin/Pods-NomiGuin.debug.xcconfig"; sourceTree = "<group>"; };
+		29D4A63E35013841A429E571 /* Pods_NomiGuinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomiGuinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE7D1880ED35A2C20B85B98 /* Pods_NomiGuinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NomiGuinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601DDFE3251DE666004AFF22 /* AddDrinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkModel.swift; sourceTree = "<group>"; };
+		601DDFE8251DE90E004AFF22 /* Drinkables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinkables.swift; sourceTree = "<group>"; };
 		60AE7A50251C87EE0065CE47 /* NomiGuin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NomiGuin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AE7A53251C87EE0065CE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60AE7A55251C87EE0065CE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,8 +151,6 @@
 				D7D89826251C9099002588E6 /* GoogleService-Info.plist */,
 				60AE7A64251C87F10065CE47 /* Info.plist */,
 				60AE7A5C251C87EE0065CE47 /* NomiGuin.xcdatamodeld */,
-				60AE7AC0251DA8010065CE47 /* NomiTableViewCell.swift */,
-				60AE7AC1251DA8010065CE47 /* NomiTableViewCell.xib */,
 			);
 			path = NomiGuin;
 			sourceTree = "<group>";
@@ -176,6 +176,8 @@
 		60AE7ACF251DABD00065CE47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				60AE7AC0251DA8010065CE47 /* NomiTableViewCell.swift */,
+				60AE7AC1251DA8010065CE47 /* NomiTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				60AE7AD1251DABF30065CE47 /* FriendsModel.swift */,
+				601DDFE3251DE666004AFF22 /* AddDrinkModel.swift */,
+				601DDFE8251DE90E004AFF22 /* Drinkables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,8 +460,10 @@
 				60AE7AB9251DA6900065CE47 /* NomiUser.swift in Sources */,
 				60AE7AD2251DABF30065CE47 /* FriendsModel.swift in Sources */,
 				60AE7A54251C87EE0065CE47 /* AppDelegate.swift in Sources */,
+				601DDFE4251DE666004AFF22 /* AddDrinkModel.swift in Sources */,
 				60AE7A56251C87EE0065CE47 /* SceneDelegate.swift in Sources */,
 				D70DCE9C251CA0B1007D4AB1 /* FriendsViewController.swift in Sources */,
+				601DDFE9251DE90E004AFF22 /* Drinkables.swift in Sources */,
 				60AE7A5E251C87EE0065CE47 /* NomiGuin.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
